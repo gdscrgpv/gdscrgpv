@@ -2,8 +2,9 @@
     
 
     #hero{
-        background: url(../img/ggbg.gif) 45% top no-repeat;
+        background: url(../img/Group\ 2@2x.png) 45% top no-repeat;
         background-size: cover;
+        background-position: left;
     }
     #hero h2 {
         font-size: 2.5rem;
@@ -11,12 +12,23 @@
         margin-top: 47% !important;
         margin: auto;
     }
-
     #hero .hero-img {
         margin-top: 70%;
         height: 50%;
         width: 35%;
     }
+    .hero-illus{
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        transform: translate(-50%,-50%);
+ 
+    }
+
+    .hero-decp{
+        
+        width: 95%;
+}
     .second-title {
         font-size: 1rem;
         top: 10%;
@@ -24,6 +36,11 @@
     .card{
         height: 80%;
         margin: 5% auto;
+    }
+    .hero-logo{
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%,-50%);
     }
 
     .contact-about {
@@ -51,4 +68,24 @@
         padding-left: 0;
     }
 
+}
+@media screen and (max-width: 840px)  {
+    .toggle-text{
+        display: block;
+    }
+    .wrapper{
+        display: none;
+    }
+    .hero-logo{
+        display: none;
+    }
+    .hero-illus{
+        left: 55%;
+        
+    }
+}
+@media screen and (max-width: 1177px)  {
+    .hero-logo{
+        width: 200px;
+    }
 }
