@@ -424,17 +424,103 @@ h6 {
   --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 98vh;
   /* background: linear-gradient(
         45deg,
         rgba(29, 224, 153, 0.8),
         rgba(29, 200, 205, 0.8)
       ),
       url("../img/bg.jpg") center top no-repeat; */
-  background: url("../img/ggbg.gif") center top no-repeat;
+  background: url("../img/Group\ 2@2x.png") center top no-repeat;
   background-size: cover;
+  background-position: left;
   position: relative;
 }
+.hero-logo{
+  width: 320px;
+  height: auto;
+  position: absolute;
+  right: 5%;
+  top: 28%;
+}
+.hero-illus{
+  width: 35%;
+  height: auto;
+  position: absolute;
+  left: 35%;
+  top: 45%;
+}
+.hero-decp{
+  width: 50%;
+  position: relative;
+  left: 5%;
+  top: 35%;
+}
+.toggle-text{
+  display: none;
+}
+.hero-decp p{
+  font-size: 5px;
+
+}
+.wrapper{
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 200;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #16f5c5;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  border-left: 2px solid #ffffff;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
+
 
 @media (min-width: 1025px) {
   #hero {
