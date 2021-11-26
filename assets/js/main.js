@@ -45,7 +45,7 @@
    */
   let navbarlinks = select("#navbar .scrollto", true);
   const navbarlinksActive = () => {
-    let position = window.scrollY + 200;
+    let position = window.scrollY + 250;
     navbarlinks.forEach((navbarlink) => {
       if (!navbarlink.hash) return;
       let section = select(navbarlink.hash);
@@ -87,8 +87,8 @@
   let selectHeader = select("#header");
   if (selectHeader) {
     const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add("header-scrolled");
+      if (window.scrollY > 300) {
+        setTimeout(selectHeader.classList.add("header-scrolled"),3000)
       } else {
         selectHeader.classList.remove("header-scrolled");
       }
